@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PNRT.Server", "Server\PNRT.Server.csproj", "{F89A09A9-6767-460B-9FD9-57CCAC20942C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PNRT.Client", "Client\PNRT.Client.csproj", "{6F055F74-DE4F-4BA8-95FE-09A5AB35C338}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PNRT.Shared", "Shared\PNRT.Shared.csproj", "{AACA65A1-BBB4-4933-85BC-26E2FEACBA1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F89A09A9-6767-460B-9FD9-57CCAC20942C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89A09A9-6767-460B-9FD9-57CCAC20942C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89A09A9-6767-460B-9FD9-57CCAC20942C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89A09A9-6767-460B-9FD9-57CCAC20942C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F055F74-DE4F-4BA8-95FE-09A5AB35C338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F055F74-DE4F-4BA8-95FE-09A5AB35C338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F055F74-DE4F-4BA8-95FE-09A5AB35C338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F055F74-DE4F-4BA8-95FE-09A5AB35C338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AACA65A1-BBB4-4933-85BC-26E2FEACBA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AACA65A1-BBB4-4933-85BC-26E2FEACBA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AACA65A1-BBB4-4933-85BC-26E2FEACBA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AACA65A1-BBB4-4933-85BC-26E2FEACBA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B42D13F-4354-4579-A8D6-C2EFBC1E974C}
+	EndGlobalSection
+EndGlobal

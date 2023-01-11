@@ -1,0 +1,57 @@
+﻿@inherits LayoutComponentBase
+<MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar Elevation="1" Color="Color.Transparent" Dense="false" Class="Glass">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudText Typo="Typo.h5" Class="ml-3">BEST RECING</MudText>
+        <MudSpacer />
+        <WelcomeNote/>
+        <MudSpacer />
+        <MudIconButton Icon="@Icons.Custom.Brands.Facebook" Color="Color.Inherit" Link="https://www.facebook.com/GoldwingRacingSriLanka?mibextid=LQQJ4d" Target="_blank" />
+        <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Color="Color.Inherit" Link="https://github.com/MudBlazor/MudBlazor/" Target="_blank" />
+    </MudAppBar>
+    <MudDrawer Style="background-color:black" @bind-Open="_drawerOpen" Elevation="1" Variant="@DrawerVariant.Mini" OpenMiniOnHover="true">
+        <MudDrawerHeader>
+            @* @if ()
+            {
+            <MudText Typo="Typo.h6" hidden>PIRC</MudText>
+            }
+            else
+            {
+            <MudText Typo="Typo.h6" >PIRC</MudText>
+            }*@
+
+        </MudDrawerHeader>
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent>
+        <div class="bg-white rounded-5 shadow-sm mx-1" style="min-height:95vh">
+            <MudContainer MaxWidth="MaxWidth.Large" Class="my-5 pt-5">
+                @Body
+            </MudContainer>
+        </div>
+    </MudMainContent>
+    <style>
+        .Glass {
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+        }
+    </style>
+</MudLayout>
+
+
+
+@code {
+    bool _drawerOpen = true;
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+
+    private MudTheme _theme = new();
+    private bool _isDarkMode;
+}
